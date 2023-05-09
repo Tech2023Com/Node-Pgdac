@@ -1,5 +1,5 @@
 
-
+const data = require('../data')
 
 
 exports.getServerInfo= (req,res)=>{
@@ -10,6 +10,12 @@ exports.getServerInfo= (req,res)=>{
 
     res.send(`<h1>Hello Server on PORT : 9877</h1>`)
 }
+
+
+exports.getTodos = (req,res)=>{
+res.send(data)
+}
+
 
 exports.getPersonalDetails = (req,res)=>{
     res.send({name : "user" , mobile : "b user"})

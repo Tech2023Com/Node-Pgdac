@@ -7,6 +7,7 @@ router.get('/' ,Controllers.getServerInfo )
 router.get('/get-personal-details' ,Controllers.getPersonalDetails )
 router.get('/details-form' ,Controllers.getForm )
 router.post('/result' ,Controllers.getResult )
+router.get('/todos',Controllers.getTodos)
 
 
 
